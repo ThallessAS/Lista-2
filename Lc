@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float salario_receber; //resposta
+
+    float horas_trabalhadas, horas_extras, salario_minimo; //vou digitar
+
+    float valor_htrabalhada, valor_hextra; //vou calcular
+
+    float salario_bruto, salario_extra; //soma para resposta
+
+    printf("Digite: Horas Trabalhadas ; Quantidade de horas extras; Valor do Salario Min\n");
+    scanf("%f %f %f", &horas_trabalhadas, &horas_extras, &salario_minimo);
+
+    valor_htrabalhada = salario_minimo / 8;
+    valor_hextra = salario_minimo / 4;
+
+    salario_bruto = valor_htrabalhada * horas_trabalhadas;
+    salario_extra = valor_hextra * horas_extras;
+
+    salario_receber = salario_bruto + salario_extra;
+
+    printf("Meu salario a receber eh: %.2f", salario_receber);
+}
